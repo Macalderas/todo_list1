@@ -1,0 +1,8 @@
+h1 {
+  font-size: var(--titulo-h1);
+  color: var(--texto);
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+}
