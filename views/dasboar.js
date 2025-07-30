@@ -1,10 +1,11 @@
+import { crearFooter } from "../components/footer/footer.js";
 import { header } from "../components/header/headerComponent.js";
 
-export function dasboar() {
-    let seccion = document.createElement('section');
-    seccion.appendChild(header());
-    document.body.appendChild(seccion); 
+export function dashboard() {
+  const seccion = document.createElement('section');
+  seccion.appendChild(header());
+  seccion.appendChild(crearFooter());
+  document.body.appendChild(seccion);
 }
 
-dasboar(); 
-
+dashboard();
