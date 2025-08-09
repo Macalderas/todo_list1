@@ -6,8 +6,6 @@ let tareasDb = [
   { titulo: "Título de la asignación" },
   { titulo: "Título de la asignación" },
 
-  
-
 ];
 
 export function tareas() {

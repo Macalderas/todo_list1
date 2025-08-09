@@ -1,5 +1,4 @@
 footer {
-  position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
@@ -11,6 +10,12 @@ footer {
   border-radius: 6px 6px 0 0;
   box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.05);
   z-index: 10;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; /* Para que no se salga en pantallas pequeñas */
+  gap: 0.5rem;
 }
 
 .footer-button {
@@ -32,4 +37,17 @@ footer {
 .footer-button:active {
   background-color: #000;
   color: #fff;
+}
+
+/* 🔹 Adaptación para pantallas pequeñas */
+@media (max-width: 600px) {
+  footer {
+    flex-direction: column; /* Apila los elementos */
+    padding: 0.8rem 1rem;
+  }
+
+  .footer-button {
+    width: 100%; /* Botones ocupan todo el ancho */
+    font-size: 0.9rem;
+  }
 }

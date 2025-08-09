@@ -7,19 +7,21 @@
 
 .contenedor-cuadros {
   display: flex;
+  flex-wrap: wrap;
   gap: 1rem;
   padding: 1rem;
   height: 100%;
   box-sizing: border-box;
-  flex-wrap: wrap; /* para que se adapte en pantallas pequeñas */
 }
 
+/* Estilos base para escritorio */
 .div-tareas {
   flex: 2;
   background-color: rgb(200, 231, 229);
   border: 2px solid #444;
   border-radius: 8px;
   padding: 1rem;
+  min-width: 300px;
 }
 
 .div-informacion {
@@ -28,5 +30,19 @@
   border: 2px solid #444;
   border-radius: 8px;
   padding: 1rem;
+  min-width: 250px;
 }
 
+/* Media query para pantallas pequeñas (como móviles) */
+@media (max-width: 768px) {
+  .contenedor-cuadros {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .div-tareas,
+  .div-informacion {
+    flex: unset;
+    width: 100%;
+  }
+}

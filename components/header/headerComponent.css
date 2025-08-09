@@ -2,6 +2,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap; /* permite que el contenido se acomode en varias líneas */
   padding: 1rem 2rem;
   border: 2px solid #000;
   border-radius: 6px;
@@ -9,10 +10,22 @@ header {
   position: relative;
 }
 
+/* Adaptación para pantallas pequeñas */
+@media (max-width: 700px) {
+  header {
+    flex-direction: row;
+    gap: 0.5rem;
+  }
+}
+
 /* Título */
 h1 {
   margin: 0;
-  font-size: 1.5rem;
+  font-size: 18px;
+  background: none;   /* Quita el fondo gris */
+  padding: 0;         /* Elimina espacio interno */
+  border: none;       /* Por si hay algún borde */
+  border-radius: 0;   /* Quita esquinas redondeadas */
 }
 
 /* Centro */

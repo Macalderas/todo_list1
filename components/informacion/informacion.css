@@ -4,12 +4,15 @@
   flex-direction: column;
   gap: 20px;
   font-family: 'monospace';
+  padding: 1rem;
+  box-sizing: border-box;
 }
 
 /* Botones superiores */
 .contenedor-botones {
   display: flex;
   gap: 10px;
+  flex-wrap: wrap; /* Para que no se salgan en pantallas pequeñas */
 }
 
 .btn-tarea,
@@ -21,8 +24,11 @@
   cursor: pointer;
   font-size: 14px;
   transition: background-color 0.2s ease;
+  flex: 1; /* Que los botones ocupen espacio proporcional en pantallas pequeñas */
+  min-width: 120px;
 }
 
+/* Botón tarea */
 .btn-tarea {
   background-color: #cfe8ff;
   color: #000;
@@ -32,6 +38,7 @@
   background-color: #addbff;
 }
 
+/* Botón archivados */
 .btn-archivados {
   background-color: #e6e6e6;
   color: #000;
@@ -49,6 +56,7 @@
   width: 300px;
   position: relative;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
 }
 
 .estado {
@@ -83,6 +91,7 @@
   display: flex;
   gap: 10px;
   margin-top: 10px;
+  flex-wrap: wrap; /* Para que los avatares se acomoden en varias filas */
 }
 
 .avatar {
@@ -95,4 +104,34 @@
   align-items: center;
   justify-content: center;
   font-size: 18px;
+}
+
+.btn-tab {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-tab.activa {
+  background-color: #4a90e2 !important;
+  color: white;
+}
+
+/* Contenedor de cada pestaña */
+.contenido-tab {
+  display: none;
+}
+
+.contenido-tab.activo {
+  display: block;
+}
+
+/* 🔹 Adaptación para pantallas pequeñas */
+@media (max-width: 600px) {
+  .contenedor-botones {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .tarjeta {
+    width: 100%; /* Que la tarjeta ocupe todo el ancho */
+  }
 }

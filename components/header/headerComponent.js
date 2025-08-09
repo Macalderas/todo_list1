@@ -3,7 +3,7 @@ export function header() {
 
     // Título a la izquierda
     let h1 = document.createElement('h1');
-    h1.innerText = "Todo-list";
+    h1.innerText = "✏️ Todo List";
     header.appendChild(h1);
 
     // Centro: Texto + contador
