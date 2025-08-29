@@ -3,6 +3,129 @@
   padding: 0;
   box-sizing: border-box;
 }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-rojo: #e74c3c;
+  --color-azul: #3498db;
+  --color-verde: #2ecc71;
+
+  --titulo-h1: 2.8rem;
+  --titulo-h2: 2rem;   /* agregado para el anuncio */
+  --titulo-h3: 1.8rem;
+  --parrafo: 1rem;
+  --span: 0.875rem;
+
+  --texto: #ffffff;
+}
+
+html, body {
+  height: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#root {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: url("https://www.xplora.eu/wp-content/uploads/como-hacer-mi-web.jpg");
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 1rem;
+}
+
+h1 {
+  font-size: var(--titulo-h1);
+  color: var(--texto);
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+}
+
+/* --- NUEVO estilo para el anuncio --- */
+h2 {
+  font-size: var(--titulo-h2);
+  color: var(--texto);
+  background-color: rgba(231, 76, 60, 0.85); /* rojo semitransparente */
+  padding: 0.5rem 1.5rem;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.3);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-rojo: #e74c3c;
+  --color-azul: #3498db;
+  --color-verde: #2ecc71;
+
+  --titulo-h1: 2.8rem;
+  --titulo-h2: 2rem;   /* agregado para el anuncio */
+  --titulo-h3: 1.8rem;
+  --parrafo: 1rem;
+  --span: 0.875rem;
+
+  --texto: #ffffff;
+}
+
+html, body {
+  height: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#root {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: url("https://www.xplora.eu/wp-content/uploads/como-hacer-mi-web.jpg");
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 1rem;
+}
+
+h1 {
+  font-size: var(--titulo-h1);
+  color: var(--texto);
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+}
+
+/* --- NUEVO estilo para el anuncio --- */
+h2 {
+  font-size: var(--titulo-h2);
+  color: var(--texto);
+  background-color: rgba(231, 76, 60, 0.85); /* rojo semitransparente */
+  padding: 0.5rem 1.5rem;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.3);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 :root {
   --color-rojo: #e74c3c;
@@ -42,4 +165,97 @@ h1 {
   background-color: rgba(0, 0, 0, 0.4);
   padding: 0.5rem 1rem;
   border-radius: 8px;
+}
+
+
+:root {
+  --color-rojo: #e74c3c;
+  --color-azul: #3498db;
+  --color-verde: #2ecc71;
+
+  --titulo-h1: 2.8rem;
+  --titulo-h3: 1.8rem;
+  --parrafo: 1rem;
+  --span: 0.875rem;
+
+  --texto: #ffffff;
+}
+
+html, body {
+  height: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#root {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: url("https://www.xplora.eu/wp-content/uploads/como-hacer-mi-web.jpg");
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 1rem;
+}
+
+h1 {
+  font-size: var(--titulo-h1);
+  color: var(--texto);
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+}
+
+:root {
+  --color-rojo: #e74c3c;
+  --color-azul: #3498db;
+  --color-verde: #2ecc71;
+
+  --titulo-h1: 2.8rem;
+  --titulo-h2: 2rem;   /* agregado para el anuncio */
+  --titulo-h3: 1.8rem;
+  --parrafo: 1rem;
+  --span: 0.875rem;
+
+  --texto: #ffffff;
+}
+
+html, body {
+  height: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#root {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: url("https://www.xplora.eu/wp-content/uploads/como-hacer-mi-web.jpg");
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 1rem;
+}
+
+h1 {
+  font-size: var(--titulo-h1);
+  color: var(--texto);
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+  background-color: rgba(182, 126, 157, 0.4);
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+}
+
+/* --- NUEVO estilo para el anuncio --- */
+h2 {
+  font-size: var(--titulo-h2);
+  color: var(--texto);
+  background-color: rgba(240, 208, 204, 0.85); /* rojo semitransparente */
+  padding: 0.5rem 1.5rem;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.3);
 }
