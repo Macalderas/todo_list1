@@ -85,5 +85,6 @@ export function informacion() {
   contenedor.appendChild(contenidoTarea);
   contenedor.appendChild(contenidoArchivados);
 
+
   return contenedor;
 }
